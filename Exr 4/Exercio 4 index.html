@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+    
+ <head>
+
+ <title>Web Design</title>
+
+     <meta name="description" content="HTML tutorial">
+     <meta name="keywords"
+content="HTML,CSS,XML,JavaScript">
+     <meta name="author" content="Pedro Timóteo">
+     <meta http-equiv="refresh" content="30">
+     <meta charset="UTF-8"> 
+
+     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+     <link rel="stylesheet" type="text/css" href="css/newstyle.css">
+      
+ </head>
+
+<!---Content starts here -->
+ <body>
+
+    <header>
+
+        <a id="menu_icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" fill="white"/>
+            </svg>
+            </a>
+
+        <div id="drawer">
+            <nav>
+            <a href="#unordered"> Unordered List </a>
+            <a href="#ordered"> Ordered List</a>
+            <a href="#color"> Color Codes</a>
+            <a href="#video"> Video Tags</a>
+            <a href="#table"> Table Tags</a>
+            </nav>
+            </div>
+
+        <h1>JELLY FISH PROJECT</h1>
+        <p> Illustration </p>
+        <hr>
+        </header>
+       
+        <nav id="tabletPC" class="col-3">
+        <a href="#unordered"> Unordered List</a>
+        <br />
+        <a href="#ordered"> Ordered List</a>
+        <br />
+        <a href="#table"> Table Codes</a>
+        <br />
+        <a href="#video"> Video Tags</a>
+        </nav>
+
+ <div id="container" class="col-9">
+     <section>
+        <a name="unordered"></a>
+     <h1> Process </h1>
+ <i>From refference to final</i>
+<ul>
+    <li> refference, </li>
+    <li> thumbnails,</li>
+    <li> rendering,</li>
+    <li> details </li>
+    <li> final fixes. </li>
+    </ul> 
+</section>
+
+<section>
+    <a name="ordered"></a>
+      <h1> What is the project </h1>
+     <i> concept </i>
+     <ul>
+     <li> In a world where the climatic changes go to the extreme, the jellyfish thriumph over all other living thing. </li>
+    
+     </ul> 
+</section>
+
+<section>
+    <h1>Final</h1>
+ <p> Jellyfish </p>
+
+<img src="born jellyfish f.png" width="auto" height="400">
+<img src="jelly in the city color cg.png" width="auto" height="400">
+</section>
+
+<section>
+<p><h1>Process</h1></p>
+
+<a name="unordered"></a>
+<video width="640" height="480" controls autoplay loop>
+    
+        <source src="ezgif.com-gif-maker.mp4" type="video/webm">
+        <source src="ezgif.com-gif-maker.mp4" type="video/mp4">
+        
+    </video>
+</section>
+
+   
+
+</div>
+
+        <aside class="col-2">
+            <h3>Aside</h3>
+            <p>Esta zona serve para colocar informacao menos relevante</p>
+            </aside>  
+     
+            <footer>
+                <h2>Developed by Pedro Timóteo</h2>
+                </footer> 
+ 
+                <script>
+                 let menu_icon = document.querySelector('#menu_icon');
+                 let container = document.querySelector("#container");
+                 let drawer = document.querySelector('#drawer');
+
+                 menu_icon.addEventListener('click', function (e) {
+                 drawer.classList.toggle('open');
+                 e.stopPropagation();});
+                 container.addEventListener('click', function () {
+                 drawer.classList.remove('open');});
+                
+                 </script>
+
+ <!---Content ends here -->
+</body>
+    
+</html>
